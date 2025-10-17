@@ -11,8 +11,12 @@ name: Java CI with Maven
 on:
   push:
     branches: [ "main" ]
+    tags: ['v*'] # triggers on v1.0.0, v1.1.0, etc.
+
   pull_request:
     branches: [ "main" ]
+permissions:
+  contents: write # needed to create/update releases    
 
 jobs:
   build:
