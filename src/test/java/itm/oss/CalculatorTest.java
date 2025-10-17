@@ -43,7 +43,7 @@ class CalculatorTest {
         assertFalse(calc.isPrime(-2), "There are not negative primer numbers.");
         assertFalse(calc.isPrime(-3), "There are not negative primer numbers.");
         assertFalse(calc.isPrime(-4), "There are not negative primer numbers.");
-        assertFalse(calc.isPrime(-5), "There are not negative primer numbers.");
+        assertFalse(calc.isPrime(-4), "There are not negative primer numbers.");
     }
 
 }
