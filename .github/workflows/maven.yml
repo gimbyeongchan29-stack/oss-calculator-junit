@@ -35,3 +35,8 @@ jobs:
       with:
         name: my-java-app # <-- 아티팩트의 이름 (자유롭게 지정)
         path: target/*.jar # <-- 업로드할 파일의 경로
+    - name: Publish JAR to GitHub Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v2
+      with:
+        files: target/*.jar
