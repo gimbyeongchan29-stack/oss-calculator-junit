@@ -8,7 +8,7 @@ A minimal Java project showing **Apache Maven** for build automation and **JUnit
 - (Optional) VS Code + “Extension Pack for Java”
 
 ## Project Layout
-- `src/main/java/...` application code  
+- `src/main/java/...` application code  134124
 - `src/test/java/...` test code  
 - `pom.xml` Maven config
 
@@ -42,3 +42,4 @@ mvn surefire-report:report
 - Ensure package names match folders.
 - Confirm JUnit 5 dependencies are in `pom.xml`.
 - Java version in `pom.xml` matches your installed JDK.
+
